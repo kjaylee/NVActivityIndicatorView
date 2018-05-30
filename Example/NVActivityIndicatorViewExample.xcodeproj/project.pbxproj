@@ -151,7 +151,6 @@
 				1F0326F61F0D28CC00BF3358 /* Frameworks */,
 				1F0326F71F0D28CC00BF3358 /* Resources */,
 				4420B95FF59E9BF6A4CA47A2 /* [CP] Embed Pods Frameworks */,
-				DD185C4DF3DF1B66D2FECDB4 /* [CP] Copy Pods Resources */,
 				A3BEA4B22075252600F1AF75 /* ShellScript */,
 			);
 			buildRules = (
@@ -172,7 +171,6 @@
 				1F0327261F0D399E00BF3358 /* Frameworks */,
 				1F0327271F0D399E00BF3358 /* Resources */,
 				F40FD3845AF34C6530AA8DA8 /* [CP] Embed Pods Frameworks */,
-				C0029094870C36B5EC794102 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,8 +194,9 @@
 				TargetAttributes = {
 					1F0326F81F0D28CC00BF3358 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 45WU468FZE;
 						LastSwiftMigration = 0900;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					1F0327281F0D399E00BF3358 = {
 						CreatedOnToolsVersion = 8.3;
@@ -295,36 +294,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		C0029094870C36B5EC794102 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NVActivityIndicatorViewExample-NVActivityIndicatorViewTests/Pods-NVActivityIndicatorViewExample-NVActivityIndicatorViewTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DD185C4DF3DF1B66D2FECDB4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NVActivityIndicatorViewExample/Pods-NVActivityIndicatorViewExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		DEFA0E424E92625E57036A83 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -531,7 +500,9 @@
 			baseConfigurationReference = E6DEEC0FE73BABF805BEE043 /* Pods-NVActivityIndicatorViewExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45WU468FZE;
 				INFOPLIST_FILE = NVActivityIndicatorViewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.vinhis.NVActivityIndicatorViewExample;
@@ -547,7 +518,9 @@
 			baseConfigurationReference = 06AD8F79CC9AFA25AEDA0F61 /* Pods-NVActivityIndicatorViewExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45WU468FZE;
 				INFOPLIST_FILE = NVActivityIndicatorViewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.vinhis.NVActivityIndicatorViewExample;

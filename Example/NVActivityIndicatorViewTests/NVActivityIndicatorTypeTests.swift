@@ -33,6 +33,7 @@ class NVActivityIndicatorTypeTests: XCTestCase {
     func testAnimation() {
         let enumClass: [NVActivityIndicatorType: NVActivityIndicatorAnimationDelegate.Type] = [
             .blank: NVActivityIndicatorAnimationBlank.self,
+            .wmpRing: NVActivityIndicatorAnimationWmpTalkRing.self,
             .ballPulse: NVActivityIndicatorAnimationBallPulse.self,
             .ballGridPulse: NVActivityIndicatorAnimationBallGridPulse.self,
             .ballClipRotate: NVActivityIndicatorAnimationBallClipRotate.self,

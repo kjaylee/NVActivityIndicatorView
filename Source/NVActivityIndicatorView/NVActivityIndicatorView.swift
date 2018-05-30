@@ -65,12 +65,15 @@ import UIKit
  - CircleStrokeSpin:        CircleStrokeSpin animation.
  */
 public enum NVActivityIndicatorType: Int {
+    
     /**
      Blank.
 
      - returns: Instance of NVActivityIndicatorAnimationBlank.
      */
     case blank
+    
+    case wmpRing
     /**
      BallPulse.
 
@@ -335,6 +338,8 @@ public enum NVActivityIndicatorType: Int {
             return NVActivityIndicatorAnimationAudioEqualizer()
         case .circleStrokeSpin:
             return NVActivityIndicatorAnimationCircleStrokeSpin()
+        case .wmpRing:
+            return NVActivityIndicatorAnimationWmpTalkRing()
         }
     }
 }

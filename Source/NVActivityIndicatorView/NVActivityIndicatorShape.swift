@@ -34,6 +34,7 @@ enum NVActivityIndicatorShape {
     case ringTwoHalfVertical
     case ringTwoHalfHorizontal
     case ringThirdFour
+    case ringHalf
     case rectangle
     case triangle
     case line
@@ -44,7 +45,7 @@ enum NVActivityIndicatorShape {
     func layerWith(size: CGSize, color: UIColor) -> CALayer {
         let layer: CAShapeLayer = CAShapeLayer()
         var path: UIBezierPath = UIBezierPath()
-        let lineWidth: CGFloat = 2
+        let lineWidth: CGFloat = 3
 
         switch self {
         case .circle:
@@ -152,6 +153,15 @@ enum NVActivityIndicatorShape {
             layer.fillColor = nil
             layer.strokeColor = color.cgColor
             layer.lineWidth = 2
+        case .ringHalf:
+            path.addArc(withCenter: CGPoint(x: size.width / 2, y: size.height / 2),
+                        radius: size.width / 2,
+                        startAngle: CGFloat(Double.pi),
+                        endAngle: CGFloat(0.0),
+                        clockwise: false)
+            layer.fillColor = nil
+            layer.strokeColor = color.cgColor
+            layer.lineWidth = 3
         }
 
         layer.backgroundColor = nil
